@@ -1,0 +1,108 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-direction: column; 
+			align-items: center;
+			margin: 0;
+			padding: 0; 
+			overflow-x: hidden;
+		}
+		ul{
+			background-color: white; 
+		}
+		a{
+			font-family: Arial;
+			color: green;
+			text-decoration: none;
+		}
+		p{
+			font-family: 'Merienda', cursive;
+			margin: 30px;
+		}
+		h2{
+			font-family: Arial;
+			color: white; 
+		}
+		h3{
+			font-family: 'Merienda', cursive;
+			margin: 30px;
+			font-weight: bold;
+		}
+		img{
+			width: 100%; 
+			height: auto; 
+		}
+		#pictureContainer{
+			width: 40vw; 
+		}
+		#main{
+			width: 90%; 
+			display: flex;
+			justify-content: space-around; 
+			background-color: #f1f1f1;
+			margin: 50px 20px; 
+			padding: 15px; 
+			border: solid green 1px; 
+		}
+		#contents{
+			width: 100%;
+			border: solid silver 1px; 
+		}
+		#instructions{
+			width: 100%; 
+			border: solid silver 1px; 
+		}
+		#details{
+			width: 40vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;  
+		}
+		
+		@media only screen and (max-width: 800px){
+			
+			img{
+				width: 100%;
+				height: auto; 
+			}
+			p{
+				font-family: 'Merienda', cursive;
+				font-size: 90%;
+				margin: 5px;
+			}
+			h3{
+				font-family: 'Merienda', cursive;
+				font-size: 90%;
+				text-align: center;
+			}
+			#main{
+				width: 80%; 
+				min-height: 80vh; 
+				display: flex;
+				flex-wrap: wrap; 
+				justify-content: center; 
+				background-color: #f1f1f1;
+				margin: 53px 20px; 
+				padding: 15px; 
+				border: solid green 1px; 
+			}
+			#pictureContainer{
+				width: 99%; 
+			}
+			#details{
+				width: 100%;
+				margin-top: 5px; 
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;  
+			}
+			#contents{
+				width: 99%;  
+			}
+			#instructions{
+				width: 99%;
+				margin-top: 5px; 
+			}
+		}

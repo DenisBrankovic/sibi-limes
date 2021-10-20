@@ -1,0 +1,223 @@
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			position: fixed; 
+			top: 0;
+			right: 0;
+			margin: 0; 
+			padding: 0;
+			width: 78%; 
+			z-index: 1;
+			height: 50px;
+			background-color: transparent;
+			display: flex;
+			justify-content: flex-end;
+			list-style-type: none;
+			transition: all 1s ease;
+		}
+		ul a{
+				font-size: 90%; 
+			}
+		li{
+			color: green;
+			font-family: Arial;
+			padding: 15px; 
+		}
+		li:hover a{
+			opacity: 0.7; 
+		}
+		#signature{
+			width: 27%;
+			position: fixed;
+			z-index: 2;
+			left: 0;
+			top: 0;
+		}
+		#signature a{
+			font-family: 'Fleur De Leah', cursive; 
+			font-size: 200%; 
+			font-weight: bold;
+			margin: 0; 
+		}
+		#navBarRight{
+			position: fixed;
+			z-index: 1;
+		}
+		#dropDown{
+			position: absolute;
+			display: none;
+			padding-top: 10px;
+		}
+		#dropDown a{
+			display: block;
+			color: green;
+			padding: 5px;
+		}
+		#contact:hover #dropDown, #contact:hover #dropDown a{
+			display: block; 
+			background-color: #f1f1f1; 
+			opacity: 1;
+		}
+		footer{
+			width: 100vw; 
+			height: 10vh;
+			margin-top: 50px; 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: transparent; 
+		}
+		footer h3{
+			color: green; 
+			font-size: 200%; 
+			font-family: 'Fleur De Leah', Crusive; 
+		}
+		.mobMenuItem{
+			color: white;
+			line-height: 5px; 
+		}
+		.mobMenuItem a{
+			color: white;
+		}
+		#closeContainer{
+			width: 25px;
+			height: 25px;
+			padding: 5px;
+			float: right;
+		}
+		#close1{
+			width: 20px;
+			height: 2px;
+			margin-top: 10px;
+			background-color: white;
+			transform: rotate(45deg);
+		}
+		#close2{
+			width: 20px;
+			height: 2px;
+			background-color: white;
+			transform: rotate(270deg);
+		}
+		#hamburgerContainer{
+			position: fixed;
+			top: 5px;
+			left: 5px;
+			z-index: 3;
+			height: 20px;
+			width: 20px;
+			margin: 5px;
+			padding: 5px;
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border: solid darkgreen 2px; 
+			border-radius: 50%;
+		}
+		#mobMenu{
+			background-image: linear-gradient(darkgreen, white); 
+			list-style-type: none;
+			height: 200vh;
+			transition: all 0.7s ease; 
+			position: fixed;
+			display: none;
+		}
+		.hamburger{
+			width: 95%;
+			height: 10%;
+			margin: 1px 0;
+			background-color: green;
+		}
+		.ulOpen{
+			width: 100%;
+			z-index: 4;
+			transition: all 0.7s ease;
+			opacity: 1;
+		}
+		.ulClosed{
+			width: 0;
+			height: 0;
+			opacity: 0;
+			z-index: 0;
+			transition: all 0.7s ease;
+		}
+        .ulClosed li{
+            display: none; 
+        }
+		.mobMenuItem{
+			opacity: 0;
+		}
+		@media only screen and (max-width:  1000px){
+			img{
+				width: 100vw;
+			}
+			ul{ 
+				display: flex;
+				justify-content: center; 
+				align-items: center;
+				margin: 0;
+				padding: 0; 
+			}
+			footer{
+				width: 100vw; 
+				height: 10vh;
+				margin-top: 0; 
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: transparent;
+			}
+			footer h3{
+				color: green; 
+				font-size: 150%; 
+				font-family: 'Fleur De Leah', Crusive; 
+			}
+			#signature a{
+				font-family: 'Fleur De Leah', cursive; 
+				font-size: 110%; 
+				font-weight: bold;
+				margin: 0; 
+			}
+			#navBarRight{
+				display: none;
+			}
+			#signature{
+				width: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				font-size: 120%; 
+			}
+			#hamburgerContainer{
+				position: fixed;
+				top: 5px;
+				left: 5px;
+				z-index: 3;
+				height: 20px;
+				width: 20px;
+				margin: 5px;
+				padding: 5px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border: solid darkgreen 2px; 
+				border-radius: 50%;
+			}
+			#mobMenu{
+				background-color: black;
+				list-style-type: none;
+				height: 100vh;
+				transition: all 0.7s ease; 
+				display: block;
+				position: fixed;
+				left: 0;
+				top: 0;
+			}
+            li{
+                font-size: 130%; 
+            }
+		}
+		

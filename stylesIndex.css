@@ -1,0 +1,262 @@
+		body{
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+		}
+		footer{
+			background-color: transparent; 
+		}
+		footer h3{
+			color: white; 
+		}
+		a{
+			font-family: Arial;
+			color: green;
+			text-decoration: none;
+		}
+		p{
+			font-family: 'Italianno', cursive;
+			color: green;
+			font-size: 320%;
+		}
+		img{
+			width: 100%;
+			height: 100%; 
+		}
+		
+		#top{
+			width: 100%;
+			height: 100vh;
+			background-image: url('pictures/limes.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#middle{
+			width: 100%;
+			height: 100vh; 
+			background: white; 
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			align-items: center; 
+		}
+		#mobileFrontImg{
+			width: 100%;
+			display: none;   
+		}
+		#categoriesWrapper{
+			width: 100%;
+			background-image: url(pictures/herbBackground.jpg); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center; 
+			padding-top: 30px;
+		}
+		#middleMob{
+			display: none;
+		}
+		.middleText{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around; 
+			align-items: center; 
+			width: 25%;
+			height: 80%;
+			
+		}
+		.middleTextPic{
+			width: 80%;
+			height: 40%;
+			display: flex; 
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.middleTextText{
+			width: 100%;
+			height: 40%;
+		}
+		.middleText p{
+			font-family: 'Merienda', cursive; 
+			font-size: 200%; 
+			font-weight: bold; 
+			text-align: center;
+			margin: 0; 
+			text-shadow: 2px 2px 4px #000000; 
+		}
+		.mt{
+			visibility: hidden; 
+		}
+		.mp{
+			visibility: hidden; 
+		}
+		.mtVisible{
+			visibility: visible; 
+		}
+		.title{
+			position: absolute;
+			font-family: 'Italianno', cursive;
+			font-size: 600%;
+			color: green; 
+		}
+		#title1{
+			top: 20%;
+			left: 10%; 
+
+		}
+		#title2{
+			top: 35%; 
+			left: 20%;
+		}
+		#title3{
+			top: 50%;
+			left: 15%; 
+		}
+		#title4{
+			top: 65%; 
+			left: 25%; 
+		}
+		.ctgContainer{
+			width: 40%;
+			height: 200px;
+			margin: 10px 20px;
+			background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+			border-radius: 20px;
+			backdrop-filter: blur(2rem);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.6s ease;
+		}
+		.ctgContainer:hover{
+			position: relative;
+			background-color: green;
+			opacity: 0.7;
+		}
+		.ctgContainer:hover > p{
+			color: white;
+		}
+
+		.slideUp {
+		  animation-name: slideUp;
+		  -webkit-animation-name: slideUp;
+		  animation-duration: 1s;
+		  -webkit-animation-duration: 1s;
+		  visibility: visible; 
+		}
+		
+		@keyframes slideUp {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translateY(70%);
+		  } 
+		  100% {
+			opacity: 1;
+			-webkit-transform: translateY(0%);
+		  }
+		}
+
+		@-webkit-keyframes slideUp {
+		  0% {
+			opacity: 0;
+			-webkit-transform: translateY(70%);
+		  } 
+		  100% {
+			opacity: 1;
+			-webkit-transform: translateY(0%);
+		  }
+		}
+		
+		@media only screen and (max-width: 1000px){
+					
+			#top{
+				background-image: none; 
+			}
+			#mobileFrontImg{
+				display: block;
+				width: 100%;
+				height: 100vh; 
+			}
+			#middle{
+				display: none;  
+			}
+			.liMob{
+				visibility: hidden; 
+			}
+			.title{
+				position: absolute;
+				font-family: 'Italianno', cursive;
+				font-size: 300%;
+                font-weight: bold; 
+				color: green; 
+				}
+			#title1{
+				top: 20%;
+				left: 10%; 
+
+			}
+			#title2{
+				top: 35%;
+				left: 20%;
+			}
+			#title3{
+				 top: 50%;
+				 left: 15%; 
+			}
+			#title4{
+				top: 65%; 
+				left: 25%; 
+			}
+			.middleTextMob p{
+				font-family: Arial;  
+				font-size: 130%; 
+				font-weight: bold; 
+				text-align: center;
+				margin: 20px 0; 
+				text-shadow: 2px 2px 4px #000000; 
+			}
+			#middleMob{
+				width: 100%;  
+				margin-bottom: 10px;
+				padding-top: 15px; 
+				background: white; 
+				display: flex;
+				flex-wrap: wrap; 
+				justify-content: space-around;
+				align-items: center; 
+			}
+			.middleTextMob{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around; 
+				align-items: center; 
+				width: 80%;
+			}
+			.ctgContainer{
+				width: 100%;
+				height: 20vh;
+				margin: 5px 10px;
+				background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+				border-radius: 20px;
+				backdrop-filter: blur(2rem);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.6s ease; 
+			}
+			.ctgContainer p{
+				font-size: 180%; 
+                text-align: center; 
+			}
+            .middleTextPicMob{
+				display: flex;
+				justify-content: center; 
+                
+			}
+			.mpMob{
+				width: 45%; 
+			}
+		}

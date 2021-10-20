@@ -1,0 +1,81 @@
+		body{
+			width: 100vw;
+			overflow-x: hidden; 
+			margin: 0;
+			padding: 0;  
+		}
+		ul{
+			background-color: white; 
+		}
+		a{
+			font-family: Arial;
+			color: green;
+			text-decoration: none;
+		}
+		p{
+			font-family: 'Merienda', cursive;
+			font-size: 120%;
+			color: black; 
+			margin: 45px; 
+			opacity: 1; 
+		}
+		h2{
+			text-align: center;
+			font-family: 'Merienda', cursive;
+			color: black;
+		}
+		#background{
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100vw;
+			height: 100%;
+			background-image: url(pictures/money.png); 
+			background-size: cover;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: space-around;  
+		}
+		#main{
+			width: 75%;
+			position: relative;
+			z-index: 0; 
+			margin: 150px auto;
+			padding: 100px;
+			background-color: #f1f1f1; 
+			opacity: 0.8; 
+		}
+		@media only screen and (max-width: 800px){
+			
+			body{
+				width: 100vw;
+				overflow-x: hidden; 
+				margin: 0;
+				padding: 0; 
+			}
+			
+			h2{
+				text-align: center;
+				font-family: 'Merienda', cursive;
+				font-size: 100%; 
+                font-weight: bold; 
+				color: black;
+			}
+			p{
+				font-family: 'Merienda', cursive; 
+				font-size: 85%;
+
+				color: black;
+				margin: 0; 
+				opacity: 1; 
+			}
+			#main{
+				width: 80%; 
+				position: relative;
+				z-index: 0; 
+				padding: 20px 10px; 
+				background-color: #f1f1f1; 
+				opacity: 0.8; 
+			}
+		}
